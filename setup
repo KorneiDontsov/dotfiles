@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+set -eu
+
+function resolve_os {
+    local os_name
+    os_name="$(uname -s)"
+
+    case "$os_name" in
+        Linux*) OS_KIND=linux ;;
+        Darwin*) OS_KIND=mac ;;
+        *) >&2 echo "$os_name: not supported" && exit 1 ;;
+    esac
+
+    readonly OS_KIND
+}
+
+function setup_rcup {
+    ln -sfin "$(pwd)/rcm" "$HOME/.dotfiles"
+    cat >| "$HOME/.rcrc" <<< "TAGS=$OS_KIND"
+    rcup
+}
+
+function setup_code {
+    local extensions
+    mapfile -t extensions < vscode/extensions.conf
+
+    if [[ -f "vscode/extensions.$OS_KIND.conf" ]]; then
+        mapfile -t -O "${#extensions[@]}" extensions < file.txt
+    fi
+
+    local install_args
+    for extension in "${extensions[@]}"; do
+        install_args+=(--install-extension "$extension")
+    done
+
+    code --force "${install_args[@]}"
+}
+
+resolve_os
+
+readonly TOOLS=(rcup code)
+for tool in "${TOOLS[@]}"; do
+    if command -v "$tool" &> /dev/null; then
+        "setup_${tool}"
+    else
+        >&2 echo "$tool: not installed. Skipping the stage."
+    fi
+done

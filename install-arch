@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -eu
+
+ARCH_PACKAGES=(
+    bash
+    bash-completion
+    micro
+    shellcheck
+    shfmt
+    starship
+)
+
+AUR_PACKAGES=(
+    blesh-git
+    rcm
+    visual-studio-code-bin
+)
+
+sudo pacman -S --needed "${ARCH_PACKAGES[@]}"
+paru -S --needed "${AUR_PACKAGES[@]}"

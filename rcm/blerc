@@ -1,0 +1,14 @@
+# shellcheck shell=bash
+
+bleopt\
+ complete_timeout_auto=250\
+ complete_limit_auto=10\
+ complete_auto_delay=500\
+ complete_ambiguous=\
+ highlight_filename=\
+ highlight_variable=\
+
+ble-bind -m 'emacs' -f 'up' 'history-search-backward'
+ble-bind -m 'emacs' -f 'down' 'history-search-forward'
+ble-bind -m 'emacs' -f 'right' 'forward-char'
+ble-bind -m 'emacs' -f 'left' 'backward-char'

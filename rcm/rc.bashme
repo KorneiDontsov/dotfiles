@@ -1,0 +1,5 @@
+# shellcheck shell=bash
+
+if command -v lazygit &> /dev/null; then
+    bashme_print -i "alias lg='lazygit'"
+fi

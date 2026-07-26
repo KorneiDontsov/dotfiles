@@ -1,0 +1,113 @@
+{
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "comments": false,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 2
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "bashIde.shfmt.binaryNextLine": true,
+    "bashIde.shfmt.caseIndent": true,
+    "bashIde.shfmt.funcNextLine": false,
+    "bashIde.shfmt.ignoreEditorconfig": false,
+    "bashIde.shfmt.keepPadding": false,
+    "bashIde.shfmt.simplifyCode": false,
+    "bashIde.shfmt.spaceRedirects": true,
+    "csharp.debug.expressionEvaluationOptions.showRawValues": true,
+    "csharp.debug.justMyCode": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxComputationTime": 0,
+    "docker.extension.enableComposeLanguageServer": false,
+    "docker.lsp.telemetry": "off",
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+    "dotnet.codeLens.enableReferencesCodeLens": true,
+    "dotnet.server.useServerGC": false,
+    "dotnet.testWindow.disableBuildOnRefresh": true,
+    "dotnet.testWindow.disableBuildOnRun": true,
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.fontVariations": true,
+    "editor.formatOnSave": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.lineHeight": 21,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 140,
+    "explorer.confirmDelete": false,
+    "explorer.incrementalNaming": "smart",
+    "extensions.autoCheckUpdates": true,
+    "extensions.autoUpdate": "off",
+    "files.associations": {
+        "*.bashme": "shellscript",
+        "Directory.Build.props": "xml",
+        "Directory.Build.targets": "xml"
+    },
+    "git.autofetch": "all",
+    "git.enableCommitSigning": true,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.hovers.pullRequests.enabled": false,
+    "gitlens.statusBar.pullRequests.enabled": false,
+    "gitlens.views.repositories.pullRequests.enabled": false,
+    "gitlens.views.repositories.showContributors": false,
+    "gitlens.views.searchAndCompare.pullRequests.enabled": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "python.languageServer": "Pylance",
+    "redhat.telemetry.enabled": false,
+    "sqltools.format": {
+        "linesBetweenQueries": "preserve",
+        "reservedWordCase": "upper"
+    },
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontSize": 14,
+    "update.mode": "manual",
+    "window.autoDetectColorScheme": false,
+    "window.confirmBeforeClose": "keyboardOnly",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "workbench.activityBar.location": "default",
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.useModal": "off",
+    "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit"
+    },
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "workbench.preferredLightColorTheme": "Tokyo Night Light",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "left",
+    "workbench.tree.indent": 18,
+    "xml.format.maxLineWidth": 0,
+    "git.confirmSync": false
+}
