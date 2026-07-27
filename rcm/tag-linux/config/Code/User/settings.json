@@ -55,7 +55,7 @@
     "explorer.confirmDelete": false,
     "explorer.incrementalNaming": "smart",
     "extensions.autoCheckUpdates": true,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "files.associations": {
         "*.bashme": "shellscript",
         "Directory.Build.props": "xml",
