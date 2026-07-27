@@ -3,6 +3,6 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 font-family = Fira Code Retina
-font-size = 15
-
 theme = TokyoNight
+
+config-file = config.workspace.ghostty

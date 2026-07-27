@@ -5,6 +5,7 @@ set -eu
 ARCH_PACKAGES=(
     bash
     bash-completion
+    ghostty
     micro
     shellcheck
     shfmt
