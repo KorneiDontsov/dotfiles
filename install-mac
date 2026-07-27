@@ -13,6 +13,8 @@ BREW_PACKAGES=(
     gnu-tar
     ghostty
     grep
+    karabiner-elements
+    lazygit
     micro
     shellcheck
     shfmt
