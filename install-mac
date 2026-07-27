@@ -11,6 +11,7 @@ BREW_PACKAGES=(
     gnu-indent
     gnu-sed
     gnu-tar
+    ghostty
     grep
     micro
     shellcheck
