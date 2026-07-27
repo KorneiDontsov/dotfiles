@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -eu
+
+BREW_PACKAGES=(
+    bash
+    bash-completion
+    gawk
+    gettext
+    gnu-getopt
+    gnu-indent
+    gnu-sed
+    gnu-tar
+    grep
+    micro
+    shellcheck
+    shfmt
+    starship
+    rcm
+    util-linux
+)
+
+brew install "${BREW_PACKAGES[@]}"

@@ -17,7 +17,7 @@ function resolve_os {
 
 function setup_rcup {
     ln -sfin "$(pwd)/rcm" "$HOME/.dotfiles"
-    cat >| "$HOME/.rcrc" <<< "TAGS=$OS_KIND"
+    ln -sfi "$(pwd)/$OS_KIND.rcrc" "$HOME/.rcrc"
     rcup
 }
 
@@ -26,7 +26,7 @@ function setup_code {
     mapfile -t extensions < vscode/extensions.conf
 
     if [[ -f "vscode/extensions.$OS_KIND.conf" ]]; then
-        mapfile -t -O "${#extensions[@]}" extensions < file.txt
+        mapfile -t -O "${#extensions[@]}" extensions < "vscode/extensions.$OS_KIND.conf"
     fi
 
     local install_args
