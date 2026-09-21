@@ -1,8 +1,13 @@
-cursor-style = block
+shell-integration = none
+
+cursor-style = bar
 cursor-style-blink = false
-shell-integration-features = no-cursor
+shell-integration-features = sudo,ssh-env,ssh-terminfo
 
 font-family = Fira Code Retina
 theme = TokyoNight
 
-config-file = config.workspace.ghostty
+keybind = ctrl+shift+arrow_left=unbind
+keybind = ctrl+shift+arrow_right=unbind
+
+config-file = ?config.workspace.ghostty
