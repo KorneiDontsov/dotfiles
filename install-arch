@@ -10,6 +10,8 @@ ARCH_PACKAGES=(
     shellcheck
     shfmt
     starship
+    superfile
+    wl-clipboard
 )
 
 AUR_PACKAGES=(
