@@ -6,7 +6,7 @@ bleopt\
  complete_auto_delay=500\
  complete_ambiguous=\
  highlight_filename=\
- highlight_variable=\
+ highlight_variable=
 
 ble-bind -m 'emacs' -f 'up' 'history-search-backward'
 ble-bind -m 'emacs' -f 'down' 'history-search-forward'
