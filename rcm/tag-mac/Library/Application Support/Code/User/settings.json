@@ -38,6 +38,7 @@
     "dotnetAcquisitionExtension.enableTelemetry": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
     "editor.fontFamily": "Fira Code Retina",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
@@ -50,8 +51,7 @@
     "editor.unicodeHighlight.allowedLocales": {
         "ru": true
     },
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140,
+    "editor.wordWrap": "off",
     "explorer.confirmDelete": false,
     "explorer.incrementalNaming": "smart",
     "extensions.autoCheckUpdates": true,
@@ -61,7 +61,7 @@
         "Directory.Build.props": "xml",
         "Directory.Build.targets": "xml"
     },
-    "git.autofetch": "all",
+    "git.autofetch": false,
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "gitlens.codeLens.scopes": [
@@ -78,15 +78,12 @@
     "python.analysis.typeCheckingMode": "standard",
     "python.languageServer": "Pylance",
     "redhat.telemetry.enabled": false,
-    "sqltools.format": {
-        "linesBetweenQueries": "preserve",
-        "reservedWordCase": "upper"
-    },
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "none",
     "terminal.integrated.defaultProfile.osx": "bash",
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontFamily": "Fira Code Retina",
     "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.fontSize": 14,
     "update.mode": "manual",
@@ -100,7 +97,7 @@
     "workbench.colorTheme": "Tokyo Night",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 5,
+    "workbench.editor.limit.value": 4,
     "workbench.editor.showTabs": "single",
     "workbench.editor.useModal": "off",
     "workbench.editorAssociations": {

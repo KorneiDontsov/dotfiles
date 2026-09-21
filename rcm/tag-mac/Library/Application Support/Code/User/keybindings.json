@@ -275,6 +275,11 @@
         "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
     },
     {
+        "command": "workbench.action.closeEditorsAndGroup",
+        "key": "ctrl+shift+w",
+        "when": "editorFocus"
+    },
+    {
         "command": "workbench.action.closeOtherEditors",
         "key": "alt+w"
     },
@@ -394,5 +399,20 @@
         "command": "workbench.view.scm",
         "key": "ctrl+shift+g ctrl+shift+g",
         "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "alt+r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "alt+r",
+        "command": "debug.setVariable",
+        "when": "variablesFocused"
+    },
+    {
+        "key": "alt+r",
+        "command": "debug.renameWatchExpression",
+        "when": "watchExpressionsFocused"
     }
 ]
