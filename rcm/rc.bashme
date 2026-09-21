@@ -1,5 +1,9 @@
 # shellcheck shell=bash
 
+function alias_lazygit {
+    builtin alias lg='lazygit'
+}
+
 if command -v lazygit &> /dev/null; then
-    bashme_print -i "alias lg='lazygit'"
+    bashme_print -f alias_lazygit
 fi
