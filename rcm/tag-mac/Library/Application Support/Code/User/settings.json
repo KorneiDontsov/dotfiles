@@ -62,6 +62,7 @@
         "Directory.Build.targets": "xml"
     },
     "git.autofetch": false,
+    "git.blame.editorDecoration.enabled": true,
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "gitlens.codeLens.scopes": [
@@ -91,8 +92,6 @@
     "vscode-default-keybindings.removeOSKeybindings": true,
     "window.autoDetectColorScheme": false,
     "window.confirmBeforeClose": "keyboardOnly",
-    "window.customMenuBarAltFocus": false,
-    "window.enableMenuBarMnemonics": false,
     "workbench.activityBar.location": "default",
     "workbench.colorTheme": "Tokyo Night",
     "workbench.editor.limit.enabled": true,
