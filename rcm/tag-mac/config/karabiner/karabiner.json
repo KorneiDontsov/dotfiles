@@ -86,7 +86,7 @@
                         ]
                     },
                     {
-                        "description": "any-app: Cmd+Left/Right/Up/Down -> Ctrl+Alt+Cmd+Left/Right/Up/Down (window halves; must be set in system keyboard settings)",
+                        "description": "any-app: Cmd+Left/Right -> Ctrl+Alt+Cmd+Left/Right (window halves; must be set in system keyboard settings)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -147,7 +147,12 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "any-app: Cmd+Up -> Ctrl+Fn+F (fill window)",
+                        "manipulators": [
                             {
                                 "conditions": [
                                     {
@@ -168,16 +173,20 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "up_arrow",
+                                        "key_code": "f",
                                         "modifiers": [
                                             "control",
-                                            "option",
-                                            "command"
+                                            "fn"
                                         ]
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "any-app: Cmd+Down -> Cmd+H (hide window)",
+                        "manipulators": [
                             {
                                 "conditions": [
                                     {
@@ -198,10 +207,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "down_arrow",
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "control",
-                                            "option",
                                             "command"
                                         ]
                                     }
