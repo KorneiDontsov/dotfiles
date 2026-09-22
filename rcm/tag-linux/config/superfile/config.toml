@@ -17,7 +17,7 @@ editor = ""
 
 #-- Directory Editor
 # 
-dir_editor = ""
+dir_editor = "nautilus"
 
 #-- Auto check for update
 auto_check_update = true
